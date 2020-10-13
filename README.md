@@ -30,7 +30,7 @@ subscription=$(aws sns subscribe \
   --output text \
 )
 ```
-- Look in the first browser tab. The webserver will have output the SNS subscription token. You'll need it for the next command
+- Look in the first browser tab. The webserver will have output the **SNS Subscription Token**. You'll need it for the next command
 - Confirm the subscription
 ```
 aws sns confirm-subscription --topic-arn ${topic} --token <SNS_SUBSCRIPTION_TOKEN>
