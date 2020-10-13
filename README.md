@@ -30,7 +30,7 @@ subscription=$(aws sns subscribe \
   --output text \
 )
 ```
-- Look in the first browser tab. The webserver will have output the SNS subscription token. You'll need it for the next command.
+- Look in the first browser tab. The webserver will have output the SNS subscription token. You'll need it for the next command
 - Confirm the subscription
 ```
 aws sns confirm-subscription --topic-arn ${topic} --token <SNS_SUBSCRIPTION_TOKEN>
@@ -40,7 +40,7 @@ aws sns confirm-subscription --topic-arn ${topic} --token <SNS_SUBSCRIPTION_TOKE
 aws sns publish --topic-arn ${topic} --message "this is a test"
 ```
 - The webserver output will display the published message
-- If you repeat the `subscribe` and `confirm-subscription` steps for another webserver then both will receive the notification
+- If you repeat the `subscribe` and `confirm-subscription` steps for another webserver then both will be notified of any publications
 - You can remove a subscription as follows
 ```
 aws sns unsubscribe
