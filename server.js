@@ -7,7 +7,9 @@ server.listen(port, () => { console.log('Server listening at port %d', port); })
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.post('/', (req, res) => {
-//     console.log(req.body)
-    console.log(req)
-    res.end();
+  console.log("<--REQ-->")
+  console.log(req)
+  console.log("<--BODY-->")
+  console.log(req.body)
+  res.end();
 })
