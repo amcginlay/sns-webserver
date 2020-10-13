@@ -43,5 +43,5 @@ aws sns publish --topic-arn ${topic} --message "this is a test"
 - If you repeat the `subscribe` and `confirm-subscription` steps for another webserver then both will be notified of any publications
 - You can remove a subscription as follows
 ```
-aws sns unsubscribe
+aws sns unsubscribe --subscription-arn ${subscription}
 ```
