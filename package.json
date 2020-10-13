@@ -1,0 +1,22 @@
+{
+  "name": "sns-webserver",
+  "version": "1.0.0",
+  "description": "NodeJS webserver to support SNS http subscriptions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcginlay/sns-webserver.git"
+  },
+  "dependencies": {
+    "express": "~4.17.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amcginlay/sns-webserver/issues"
+  },
+  "homepage": "https://github.com/amcginlay/sns-webserver#readme"
+}
