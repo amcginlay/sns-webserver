@@ -20,7 +20,7 @@ topic=$(aws sns create-topic \
   --output text \
 )
 ```
-- Subscribe the webserver to the SNS topic
+- Subscribe the webserver to the SNS topic using its public IP address
 ```
 subscription=$(aws sns subscribe \
   --topic-arn ${topic} \
