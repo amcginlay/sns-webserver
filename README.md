@@ -18,7 +18,7 @@ npm update
 sudo PORT=80 npm start
 ```
 - Now the webserver is running, duplicate the browser tab containing the **sns-demo** session
-- Create the topic
+- Create the SNS topic
 ```
 export AWS_DEFAULT_REGION=us-east-1
 topic=$(aws sns create-topic \
