@@ -26,7 +26,7 @@ topic=$(aws sns create-topic \
   --output text \
 )
 ```
-- Subscribe the webserver to the SNS topic using its public IP address (alternatively use an elastic IP or DNSName)
+- Subscribe the webserver to the SNS topic using its public IP address (alternatively use an elastic IP or public DNSName)
 ```
 myipaddress$($(curl --silent http://169.254.169.254/latest/meta-data/public-ipv4/))
 subscription=$(aws sns subscribe \
