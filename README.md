@@ -1,5 +1,5 @@
 # sns-webserver
-NodeJS webserver to support SNS http subscriptions
+Build a NodeJS webserver to support SNS http subscriptions
 
 - Use us-east-1
 - Create an Amazon Linux EC2 instance
