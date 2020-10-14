@@ -1,7 +1,13 @@
 # sns-webserver
 NodeJS webserver to support SNS http subscriptions
 
-- Create t2.micro Amazon Linux EC2 instance in us-east-1 with Role-EC2-AdministratorAccess, a public IP and port 80 open (Name=**sns-demo**)
+- Use us-east-1
+- Create an Amazon Linux EC2 instance
+- Use Instance Type t2.micro 
+- Use a public IP
+- Use a role that permits remote access via Systems Manager and full access to SNS
+- Use a security group to open port 80
+- Tags: Name=**sns-demo**
 - Connect to **sns-demo** with Session Manager and start the webserver as follows
 ```
 sudo curl --silent --location https://rpm.nodesource.com/setup_14.x | sudo bash -
