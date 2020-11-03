@@ -5,7 +5,7 @@ Build a NodeJS webserver to support SNS http subscriptions
 - Create an Amazon Linux EC2 instance
 - Use Instance Type t2.micro 
 - Use a public IP
-- Use a role that permits remote access via Systems Manager (SSM) and full access to SNS
+- Configure the instance to use a role that permits remote access via Systems Manager (SSM) and full access to SNS
 - Use a security group to open port 80
 - Tags: Name=**sns-demo**
 - Connect to **sns-demo** with SSM Session Manager and start the webserver as follows
